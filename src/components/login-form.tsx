@@ -15,12 +15,7 @@ const LoginForm = () => {
   } = useAuth();
   const [pending, setPending] = useState(false);
 
-  const { register, handleSubmit } = useForm<Inputs>({
-    defaultValues: {
-      username: "MegaAbizzaba",
-      password: "ppsdwGGwe!)2c3r",
-    },
-  });
+  const { register, handleSubmit } = useForm<Inputs>();
 
   const [error, setError] = useState<string | null>(null);
 
